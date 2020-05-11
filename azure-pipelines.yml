@@ -58,7 +58,7 @@ steps:
     arguments: '--no-build --configuration Release --output $(Build.ArtifactsStagingDirectory)/Release'
     zipAfterPublish: true
 
-- script: 'echo "$(Build.ArtifactsStagingDirectory)"'
+- script: 'ls -l -r /home/vsts/work/1/'
   displayName: 'Write Directory'
   workingDirectory: Tailspin.SpaceGame.Web/wwwroot
 
